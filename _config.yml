@@ -1,0 +1,11 @@
+name: 1ª Jornada/bienal en Ingeniería Geomática
+markdown: redcarpet
+highlighter: pygments
+gems: ['jekyll-sass']
+sass:
+    style: expanded
+    deploy_style: compressed
+    compile_in_place: true
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+languages: ["es", "en"]
+exclude_from_localizations: ["javascript", "images", "css"]

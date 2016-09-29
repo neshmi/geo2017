@@ -1,0 +1,43 @@
+%section#sponsors.slice
+  .container.clearfix
+    .row
+      .col-sm-12
+        .panel.panel-info
+          .panel-heading
+            %h3 Call for Sponsors
+          .panel-body
+            :markdown
+              Hay 4 modalidades: **Platinum**, **Gold**, **Silver**, and **Bronze**, for  para obtener más información remita un correo-e a [arqueologica8@upv.es](mailto:arqueologica8@upv.es)
+      .col-sm-12
+        %h1 Sponsors
+      %nav#filter.col-md-12.text-center.hidden-xs
+        %ul
+          %li
+            %a.current.btn.btn-sm{:href=>"", :"data-filter"=>"*"} Todos
+          %li
+            %a.btn.btn-sm{:href=>"", :"data-filter"=>".platinum"} Platinum
+          %li
+            %a.btn.btn-sm{:href=>"", :"data-filter"=>".gold"} Gold
+          %li
+            %a.btn.btn-sm{:href=>"", :"data-filter"=>".silver"} Silver
+          %li
+            %a.btn.btn-sm{:href=>"", :"data-filter"=>".bronze"} Bronze
+          %li
+            %a.btn.btn-sm{:href=>"", :"data-filter"=>".media"} Media Partner
+    .portfolio-items.isotopeWrapper.clearfix.imgHover
+      %article.col-sm-6.isotopeItem.platinum
+        %section.imgWrapper
+          %a{href: "http://www.aquateknica.com/", target: "_blank"}
+            %img.img-responsive.center-block{src: "/images/sponsors/aq-logo.png"}
+      %article.col-sm-6.isotopeItem.platinum
+        %section.imgWrapper
+          %a{href: "http://leica-geosystems.com/", target: "_blank"}
+            %img.img-responsive.center-block{src: "/images/sponsors/leica.jpg"}
+      %article.col-sm-6.isotopeItem.media
+        %section.imgWrapper
+          %a{href: "http://www.mappinginteractivo.es/", target: "_blank"}
+            %img.img-responsive.center-block{src: "/images/sponsors/mapping.png"}
+      %article.col-sm-6.isotopeItem.media
+        %section.imgWrapper
+          %a{href: "http://www.archeomatica.it/", target: "_blank"}
+            %img.img-responsive.center-block{src: "/images/sponsors/archaeomatica.jpg"}

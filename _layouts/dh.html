@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>{% t global.title %}</title>
+    <meta name="description" content="Arqueologíca 2.0 digitalheritage heritage cultural archaeology humanities virtual">
+    <meta name="author" content="Socied Española de Arqueología Virtual">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <!-- Bootstrap  -->
+    <link type="text/css" rel="stylesheet" href="{{ "bootstrap/css/bootstrap.min.css" | prepend: site.baseurl_root }}">
+    <!-- web font  -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+    <!-- plugin css  -->
+    <link rel="stylesheet" type="text/css" href="{{ "js-plugin/animation-framework/animate.css" | prepend: site.baseurl_root }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "js-plugin/magnific-popup/magnific-popup.css" | prepend: site.baseurl_root }}" />
+    <link type="text/css" rel="stylesheet" href="{{ "js-plugin/isotope/css/style.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" type="text/css" href="{{ "js-plugin/flexslider/flexslider.css" | prepend: site.baseurl_root }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "js-plugin/pageSlide/jquery.pageslide.css" | prepend: site.baseurl_root }}" />
+    <!-- Owl carousel-->
+    <link rel="stylesheet" href="{{ "js-plugin/owl.carousel/owl-carousel/owl.carousel.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "js-plugin/owl.carousel/owl-carousel/owl.theme.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "js-plugin/owl.carousel/owl-carousel/owl.transitions.css" | prepend: site.baseurl_root }}">
+    <!-- icon fonts -->
+    <link type="text/css" rel="stylesheet" href="{{ "font-icons/custom-icons/css/custom-icons.css" | prepend: site.baseurl_root }}">
+    <link type="text/css" rel="stylesheet" href="{{ "font-icons/custom-icons/css/custom-icons-ie7.css" | prepend: site.baseurl_root }}">
+    <!-- Custom css -->
+    <link type="text/css" rel="stylesheet" href="{{ "css/layout.css" | prepend: site.baseurl_root }}">
+    <link type="text/css" id="colors" rel="stylesheet" href="{{ "css/local.css" | prepend: site.baseurl_root }}">
+    <link type="text/css" id="smartmenus" rel="stylesheet" href="{{ "css/jquery.smartmenus.bootstrap.css" | prepend: site.baseurl_root }}">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src="{{ "js/modernizr-2.6.1.min.js" | prepend: site.baseurl_root }}"></script>
+    <!-- Favicons
+    ================================================== -->
+  </head>
+  <body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
+  {% include preloader.html %}
+
+  <!-- Primary Page Layout
+  ================================================== -->
+  <!-- globalWrapper -->
+  <div id="globalWrapper" class="localscroll">
+    <!-- header -->
+    {% haml navigation.haml %}
+      {{ content }}
+    </div>
+    <!-- global wrapper -->
+    {% include javascript.html %}
+  </body>
+  </html>

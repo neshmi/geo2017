@@ -1,0 +1,19 @@
+global:
+    spanish: Español
+    english: English
+    title: 1ª Jornada/bienal en Ingeniería Geomática
+    language_link: "/en"
+    language_link_title: "English"
+pages:
+    home: Home
+    committee: Comité Científico
+menu:
+    about_vlc: Sobre Valencia
+    keynote: Conferenciantes
+    schedule: Programa
+    home: Inicio
+    about: Información
+    dates: Fechas
+    fees: Cuotas
+    call_to_volunteer: Voluntarios
+    sponsors: Sponsors

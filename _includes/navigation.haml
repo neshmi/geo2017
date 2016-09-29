@@ -1,0 +1,46 @@
+%header#mainHeader.nav.navbar.navbar-default.navbar-fixed-top.scrollMenu{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    #scrollTarget.navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a{:href => "#homeFullScreen"}
+            %i.icon-home-outline
+            {% t menu.home %}
+        %li
+          %a{:href=>"#about"}
+            %i.icon-info-outline
+            {% t menu.about %}
+        %li
+          %a{:href=>"#dates"}
+            %i.icon-calendar
+            {% t menu.dates %}
+        %li
+          %a{:href => "#fees"}
+            %i.icon-credit-card
+            {% t menu.fees %}
+        %li
+          %a{:href => "#schedule"}
+            %i.icon-th-list-outline
+            {% t menu.schedule %}
+        %li
+          %a{:href => "#keynote"}
+            %i.icon-users-outline
+            {% t menu.keynote %}
+        %li
+          %a{:href => "#sponsors"}
+            %i.icon-infinity-outline
+            {% t menu.sponsors %}
+        %li
+          %a{:href => "#about-vlc"}
+            %i.icon-location-outline
+            {% t menu.about_vlc %}
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "{% t global.language_link %}"}
+            %i.icon-flag-filled
+            {% t global.language_link_title %}
