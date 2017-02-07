@@ -17,3 +17,29 @@ $paralax-slice-8: url('../images/theme-pics/geometry.jpg');
 $logo: url('../images/rc_logo_color_1a.png');
 
 @import 'design';
+
+.timecol {
+  min-width: 125px;
+}
+
+.keynote-speaker {
+  max-height: 250px;
+  max-width: 250px;
+}
+
+footer {
+  background-color: #fff;
+}
+
+.sponsorLogo {
+  height: 150px;
+}
+
+.sponsorLogo .imgWrapper img {
+	max-height: 150px;
+	max-width: 150px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}

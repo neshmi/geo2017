@@ -1,50 +1,34 @@
 / footer
-%footer.color4
+%footer
   %section#mainFooter
     #footer.container
       .row
         .col-sm-4
           .footerWidgetLeft
+            %img#footerLogo{:src => "/images/logos/cigeo_logo.png"}
             %a{href: 'http://www.upv.es/', target: '_blank'}
               %img#footerLogo{:src => "/images/upv_logo.jpg"}
+            %a{href: 'http://www.upm.es/', target: '_blank'}
+              %img#footerLogo{:src => '/images/logos/logo_upm_main.png'}
             %a{href: 'http://www.upv.es/entidades/DICGF/index-es.html', target: '_blank'}
               %img#footerLogoSmall{:src => "/images/dicgf.png"}
+            %a{href: 'http://www.topografia.upm.es/portal/site/ETSITopografia', target: '_blank'}
+              %img#footerLogoSmall{:src => '/images/logos/upm_logo.png'}
             %a{href: 'http://www.upv.es/entidades/ETSIGCT/', target: '_blank'}
               %img#footerLogoSmall{:src => "/images/ETSIGCT_logo.jpg"}
-            %a{href: 'http://gifle.webs.upv.es/', target: '_blank'}
-              %img#footerLogoSmall{:src => "/images/GIFLE.jpg"}
         .col-sm-8
           %h3 Información de contacto
           %p
             Para cualquier duda o comentario, envíe un correo electrónico a:
             %a{href: 'mailto:geomatica2017@upv.es'} geomatica2017@upv.es
-          %h3
-            Estas jornadas están organizado por:
-          %h4
-            %a{:href=>'http://www.upv.es'} Universitat Politècnica de València
-          %h4
-            %a{:href=>"http://www.upv.es/entidades/DICGF/index.html"} Dept. de Ingeniería Cartográfica, Geodesia y Fotogrametría (UPV)
-          %h4
-            %a{:href=>"http://www.upv.es/entidades/ETSIGCT/index.html"} Escuela Técnica Superior de Ingeniería Geodésica, Cartográfica y Topográfica (UPV)
-          %h4
-            %a{:href=>"http://gifle.webs.upv.es/"} Grupo de Investigación en Fotogrametría y Láser Escáner (GIFLE)
           .row
-            .col-lg-6
+            .col-sm-12
               %h4
                 Comité local:
               %ul
-                %li
-                  José Luis Lerma (Director del Congreso, SEAV/GIFLE/DICGF/UPV)
-                %li
-                  Jordi Padín Devesa (Dir. DICGF/UPV)
-                %li
-                  Ana Belén Anquela Julián (Dir. ETSIGCT/UPV)
-                %li
-                  Ángel Marqués Mateu (DICGF/UPV)
-                %li
-                  Matilde Balaguer Puig (DICGF/UPV)
-                %li
-                  Miriam Cabrelles López (GIFLE/UPV)
+                %li Jorge Padin Devesa
+                %li José Luis Lerma García
+                %li Angel Martín Furones
             .row
               .col-md-12.mt30
                 %h4
